@@ -16,7 +16,7 @@
   $result = $con->query($sql);//ดึงข้อมูล
 
   if(isset ($_GET['serach_click'])){
-    $sql = "SELECT * FROM movie WHERE id LIKE '%{$_GET['search']}%' OR fname LIKE '%{$_GET['search']}%' ";// LIKE การหาทุกตัว
+    $sql = "SELECT * FROM movie WHERE id LIKE '%{$_GET['search']}%' OR nmovie LIKE '%{$_GET['search']}%' ";// LIKE การหาทุกตัว
   
     
   }
